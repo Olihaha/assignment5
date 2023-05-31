@@ -14,16 +14,9 @@ warnings.filterwarnings("ignore")
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
-# Load the tweets from the CSV file
+# Load the tweets
 df = pd.read_csv('data/trumptweets.csv')
 tweets = df['content'].tolist()
-
-
-# Helper function
-def clean_text(txt):
-    txt = "".join(v for v in txt if v not in string.punctuation).lower()
-    txt = txt.replace("“", "").replace("”", "")
-    return txt.lower()
 
 # Helper function
 def clean_text(txt):
@@ -51,10 +44,10 @@ def clean_text(txt):
     return txt.strip()
 
 
-# Clean and lowercase the tweets
+# Clean and lowercase
 tweets = [clean_text(tweet) for tweet in tweets]
 
-# Tokenize the training data
+# Tokenize
 tokenizer = Tokenizer()
 tokenizer.fit_on_texts(tweets)
 total_words = len(tokenizer.word_index) + 1
@@ -63,7 +56,7 @@ total_words = len(tokenizer.word_index) + 1
 with open("models/tokenizer.pkl", "wb") as f:
     pickle.dump(tokenizer, f)
 
-# Preprocess the training data into sequences and targets
+# Preprocess the training data
 input_sequences = []
 target_sequences = []
 for line in tweets:
@@ -78,10 +71,10 @@ max_sequence_len = max([len(x) for x in input_sequences])
 input_sequences = np.array(pad_sequences(input_sequences, maxlen=max_sequence_len, padding='pre'))
 target_sequences = np.array(target_sequences)
 
-# et batch sizeS
+# Batch size
 batch_size = 512
 
-# Create the LSTM model
+# Create the LSTM
 model = Sequential()
 model.add(LSTM(128, input_shape=(max_sequence_len, 1))) 
 model.add(Dense(total_words, activation='softmax'))
