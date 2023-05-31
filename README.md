@@ -1,11 +1,8 @@
-# Assignement 5 - Donald trump tweets sentiment analysis and text generation using RNNs (self assigned)
+# Assignment 5 - Donald trump tweets sentiment analysis and text generation using RNNs (self assigned)
 
 ---
 ## Introduction and contents
 ![DONALD](extras/trumptter.gif)
-It was an huge loss for the social media platform twitter when Donald Trump on the 8th of january was banned for inciting violence. (sarcasm might be relevant for this statement) and even after being unbanned the orange man still refuses to make this return to the platform, therefore it is crucial that we replicate his existence. For this reason i have opted to create an rnn model that will replicate donalds tweets in hopes that this can fullfill the void that was left behind.. Sadly as of making this github repository i originally created a new twitter account that would tweet out the statements created by this bot, but with the new twitter api it is not possible unless a significant amount of money is spent on this project or an academic grant is given. Sadly, i highly doubt the upper management of twitter would deem this an academic achievement.
-
-On top of the text generation there is also a script called emotion_test.py which generates sentiment analysis of the tweets showing their emotions and graphs it visualize.
 
 In this repository you will find three files, "emotion_test.py", "generate_tweet.py" and "train_model.py" that all serve different purposes. First, Train_model.py trains a model and saves it and generate_tweet.py uses the trained model to generate text. the third emotion_test.py generates the emotion behind the texts and graphs it out.
  
@@ -84,6 +81,5 @@ It seems that while the generator is not terrible, it defintly needs some more w
 
 ## emotions
 ![EMOTIONS](out/emotions.png)
-The emotions displayed are not surprising and somewhat similar to what i would have expected. A vast majority of the tweets display either fear or joy, which is somewhat also what would have been expected. Fear might not at first glance be something you would hope for a politician to spread, but trump is not like the average politician. In my opinion, trump as a politician thrives on creating chaos and higlighting the weakness in the opposing side. For this reason, i am not surprised to see fear as the ruling emotion. Second and closely we have joy. I would assume that this emotion is so dominant becuase of trumps success in the 2016 election, his twitter most likely will have been filled with positive tweets for that reason.
-
+The emotions displayed are not surprising and somewhat like what I would have expected. A vast majority of the tweets display either fear or joy, which is somewhat also what would have been expected. Fear might not at first glance be something you would hope for a politician to spread, but trump is not like the average politician. In my opinion, trump as a politician thrives on creating chaos and highlighting the weakness in the opposing side. For this reason, I am not surprised to see fear as the ruling emotion. Second and closely we have joy. I would assume that this emotion is so dominant because of trumps success in the 2016 election, his twitter most likely will have been filled with positive tweets for that reason
 On a final note i would like to reminiscene about what could have been. instead of having a great donald trump bot we are instead left with an empty twitter account. twitter user @olisdonald6703 will never be able to exist unless Elon Musk lifts the restrictions placed in february.
