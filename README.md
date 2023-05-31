@@ -56,7 +56,7 @@ Just a few examples of generated texts
 ![DONALD](extras/usa-trump.webp)
 
 Generated Text: (input: hello)
-Hhello Time Nyc Plan Got Karlrove Why After Released To Go Marriage He Lobbied Debbie Disgraceful
+hello Time Nyc Plan Got Karlrove Why After Released To Go Marriage He Lobbied Debbie Disgraceful
 
 Generated Text: (input: grab her by )
 Grab Her By Do I Run Not Really Again The Best Numbers Have You American Control Our Will
