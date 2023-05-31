@@ -4,7 +4,7 @@
 ## Introduction and contents
 ![DONALD](extras/trumptter.gif)
 
-In this repository you will find three files, "emotion_test.py", "generate_tweet.py" and "train_model.py" that all serve different purposes. First, Train_model.py trains a model and saves it and generate_tweet.py uses the trained model to generate text. the third emotion_test.py generates the emotion behind the texts and graphs it out.
+In this repository you will find three files, "emotion_classification.py", "generate_tweet.py" and "train_model.py" that all serve different purposes. First, Train_model.py trains a model and saves it and generate_tweet.py uses the trained model to generate text. the third emotion_classification.py generates the emotion behind the texts and graphs it out.
  
 
 ## data
@@ -24,7 +24,7 @@ the generate_tweet.py function does the following
 2. asks the user for an input and length of the response
 3. generates text based on inputs recieved
 
-the emotion_test.py function does the following.
+the emotion_classification.py function does the following.
 1. Import the necessary libraries
 2. Initializes the model 
 3. Loads the dataset
