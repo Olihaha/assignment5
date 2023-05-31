@@ -1,4 +1,4 @@
-# Assignement 5  -  Donald trump tweet analysis and text generation using RNNs (self assigned)
+# Assignement 5 - Donald trump tweets sentiment analysis and text generation using RNNs (self assigned)
 
 ---
 ## Introduction and contents
